@@ -6,6 +6,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 class Header extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state={
+            subMenu: [
+                {classis: "platform", menuItems: "platform1"},
+                {classis: "solutions", menuItems: ["solutions1", "solutions2"]},
+                {classis: "company", menuItems: ["company1", "company2"]},
+                {classis: "resources", menuItems: ["Resource1", "Resource2"]}
+            ]
+        };
+    }
 
 render () {
     return(
