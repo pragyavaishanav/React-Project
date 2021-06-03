@@ -3,10 +3,14 @@ import './subnavbar.styles.scss'
 
 const Subnavbar = (props) => (
     <div className = {props.className +" menu-overflow"}> 
-    <ul>
-        <li>Industy 1.0</li>
-        <li> Industry 2.0</li>
-    </ul>
+        <ul>
+            {
+                props.items.map( item=>(
+                    <li key={item}>{item}</li>
+                )
+                )
+            }
+        </ul>
     </div>
 
 );
