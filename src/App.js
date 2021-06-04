@@ -9,7 +9,7 @@ function App() {
       
       <Switch>
         <Route exact path="/" component={Homepage}/>
-        <Route exact path="/wiscon-products-case-study" component={CaseStudy}/>
+        <Route exact path="/case-study" component={CaseStudy}/>
       </Switch>
 
     </div>
