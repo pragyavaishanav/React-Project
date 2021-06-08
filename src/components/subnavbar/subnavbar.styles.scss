@@ -1,24 +1,13 @@
-.menu-overflow{
-    color:black;
-    position: fixed;
-    left: 0;
-    top: 5vw;
-    transform: translate3d(-100vw, 0, 0);
-    background-color: rgba(164,42,42,0.5);      
-    width: 100vw;
-    height: 14vh;
-    color: white;
-    padding-top: 2vw;
-    box-shadow: 0px 2px grey;
-    font-size: small;
-   
 ul {
-    float: left;
-    li{
-        list-style: none;
+  float: left;
+  li {
+    margin-top: 1vw;
+    list-style: none;
+    font-size: inherit;
+    color: white;
+  }
 
-    }
+  li:hover {
+    color: rgb(155, 139, 0);
+  }
 }
-
-}
-
