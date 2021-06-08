@@ -34,7 +34,7 @@
     
 }
 
-p{
+.footer-col p{
     
     display: block;
     margin-block-start: 1em;
@@ -51,7 +51,7 @@ p{
     letter-spacing: .5px;
 }
 
-p:hover{
+.footer-col p:hover{
     color:rgb(0, 255, 0);
     cursor: pointer;
 }
