@@ -8,6 +8,7 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 class Header extends React.Component {
   constructor(props) {
     super(props);
+    this.upstate = this.upstate.bind(this);
     this.state = {
       activeMenu: "none",
       subMenu: [
@@ -45,6 +46,10 @@ class Header extends React.Component {
     };
   }
 
+  upstate(Menu) {
+    this.setState({ activeMenu: Menu });
+  }
+
   render() {
     return (
       <div className="menu-container">
@@ -57,7 +62,8 @@ class Header extends React.Component {
             <div
               className={submenu.menu + " rs-items ind-items"}
               key={submenu.key}
-              // onMouseEnter={this.upstate(submenu.key)}
+              onMouseEnter={() => this.upstate(submenu.menu)}
+              onMouseLeave={() => this.upstate("None")}
             >
               {submenu.menu}
               <FontAwesomeIcon
@@ -65,16 +71,18 @@ class Header extends React.Component {
                 style={{ marginLeft: "10px", fontSize: "0.5vw" }}
                 icon={faChevronDown}
               />
-              <Subnavbar
-                margin={submenu.margin}
-                items={submenu.menuItems}
-                className="menu-overflow"
-              ></Subnavbar>
+              {submenu.menu === this.state.activeMenu && (
+                <Subnavbar
+                  margin={submenu.margin}
+                  items={submenu.menuItems}
+                  className={`menu-overflow`}
+                ></Subnavbar>
+              )}
             </div>
           ))}
         </div>
         <div className="side-items">
-          <div className="button">Book A Demo</div>
+          <div className="demoButton">Book A Demo</div>
           <div className="ind-items"> Sign in</div>
         </div>
       </div>
