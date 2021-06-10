@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '../sections/header/header.component';
 import AnimScroll from '../sections/animator/animator.component';
