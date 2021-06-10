@@ -1,18 +1,28 @@
-import React from 'react';
-import './subnavbar.styles.scss'
+import React from "react";
+import "./subnavbar.styles.scss";
 
-const Subnavbar = (props) => (
-    <div className = {props.className +" menu-overflow"}> 
-        <ul>
-            {
-                props.items.map( item=>(
-                    <li key={item}>{item}</li>
-                )
-                )
-            }
-        </ul>
+const Subnavbar = (props) => {
+  return (
+    <div className={props.className + " menu-overflow"}>
+      {/* <div
+        style={{
+          backgroundColor: "rgb(0,0,0)",
+          height: " 0.5vw",
+          boxShadow: "0px 2px grey",
+          paddingTop: "0.2vw",
+        }}
+      ></div> */}
+      <ul style={{ marginLeft: props.margin }}>
+        {props.items.map((item) => (
+          <li key={item}>
+            <br />
+            {item}
+            <br />
+          </li>
+        ))}
+      </ul>
     </div>
-
-);
+  );
+};
 
 export default Subnavbar;
