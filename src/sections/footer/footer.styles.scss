@@ -1,0 +1,122 @@
+@import url(//db.onlinewebfonts.com/c/16c2e0b5b23bc46e7a9f7701168fec88?family=DIN);
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+.footer{
+    background-color: #3f3f3f;
+}
+
+.footer-top{
+    max-width: 1400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 70px 65px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.footer-col{
+    margin: 0;
+    font-family: 'DIN-Regular',Helvetica,Arial,sans-serif;
+    overflow-x: hidden;
+}
+
+.footer-col-title{
+    color:white;
+    font-family: "DIN-Bold";
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 18px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    
+}
+
+.footer-col p{
+    
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    opacity: .55;
+    color: #f5f5f5;
+    font-family: "DIN-Regular";
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 22px;
+    text-decoration: none;
+    letter-spacing: .5px;
+}
+
+.footer-col p:hover{
+    color:rgb(0, 255, 0);
+    cursor: pointer;
+}
+
+.footer-divider{
+    background: white;
+    height: 1px;
+    margin: 10px 0px !important;
+}
+
+.footer-col-title.last{
+    margin-top: 20px;
+}
+
+.footer-bottom{
+    background-color:#444;
+}
+
+.footer-bottom-container{
+    box-sizing: border-box;
+    min-height: 100px;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 65px;
+    background-color: #444;
+}
+
+.footer-copyright{
+    opacity: 0.55;
+    color: #f5f5f5;
+    font-family: "DIN-Regular";
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 22px;
+    font-weight: bold;
+}
+
+.footer-col .social-media-icons{
+    flex-basis: 15%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon{
+    height: 14px;
+    padding: 0 5px;
+}
+
+.loc-det{
+    opacity: .55;
+    color: #f5f5f5;
+    font-family: "DIN-Regular";
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 22px;
+    text-decoration: none;
+    max-width: 150px;
+    letter-spacing: .5px;
+}
+
+.fab:hover{
+    color: white;
+    cursor: pointer;
+}
