@@ -15,31 +15,44 @@ class Header extends React.Component {
         {
           key: "11",
           menu: "Platform",
-          menuItems: ["Geotechnical Instrumentation Monitoring"],
+          menuItems: [
+            {
+              menu: "Geotechnical Instrumentation Monitoring",
+              link: "geotechnical-platform",
+            },
+          ],
           margin: "35vw",
         },
         {
           key: "12",
           menu: "Solutions",
           menuItems: [
-            "Geotechnical Instrumentation Installation",
-            "Crack-Lens Automated Crack Monitoring",
-            "Long Distance Lora Based Dataloggers",
-            "Digital Twin for Construction",
-            "Construction Surveys",
+            { menu: "Geotechnical Instrumentation Installation", link: "#" },
+            { menu: "Crack-Lens Automated Crack Monitoring", link: "#" },
+            { menu: "Long Distance Lora Based Dataloggers", link: "#" },
+            { menu: "Digital Twin for Construction", link: "#" },
+            { menu: "Construction Surveys", link: "#" },
           ],
           margin: "40vw",
         },
         {
           key: "13",
           menu: "Company",
-          menuItems: ["About Us", "Team"],
+          menuItems: [
+            { menu: "About Us", link: "#" },
+            { menu: "Contact Us", link: "/contact-us" },
+            { menu: "Team", link: "#" },
+          ],
           margin: "45vw",
         },
         {
           key: "14",
           menu: "Resources",
-          menuItems: ["Download", "Brochures", "Free Softwares"],
+          menuItems: [
+            { menu: "Download", link: "#" },
+            { menu: "Brochures", link: "#" },
+            { menu: "Free Softwares", link: "#" },
+          ],
           margin: "52vw",
         },
       ],
@@ -54,7 +67,9 @@ class Header extends React.Component {
     return (
       <div className="menu-container">
         <div className="logo-container">
-          <img alt="NeuraTwin" className="logo-image" src={image1}></img>
+          <a href="/">
+            <img alt="NeuraTwin" className="logo-image" src={image1}></img>
+          </a>
         </div>
 
         <div className="menu-items">
@@ -73,9 +88,8 @@ class Header extends React.Component {
               />
               {submenu.menu === this.state.activeMenu && (
                 <Subnavbar
-                  margin={submenu.margin}
                   items={submenu.menuItems}
-                  className={`menu-overflow`}
+                  className="menu-overflow"
                 ></Subnavbar>
               )}
             </div>

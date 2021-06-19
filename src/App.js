@@ -1,9 +1,9 @@
 import { Switch, Route } from 'react-router-dom';
 import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import Homepage from './pages/homepage';
-import CaseStudy from './pages/wiscon-products-case-study';
-import TestPage from './pages/testpage';
+import GeotechDescription from './pages/geotechnical';
 import ContactPage from './pages/contactpage'
 
 
@@ -13,9 +13,8 @@ function App() {
       
       <Switch>
         <Route exact path="/" component={Homepage}/>
-        <Route exact path="/case-study" component={CaseStudy}/>
-        <Route exact path="/test" component={TestPage}/>
-        <Route exact path="/contact-us" component={ContactPage}/ >
+        <Route exact path="/contact-us" component={ContactPage} />
+        <Route exact path="/geotechnical-platform" component={GeotechDescription} />
       </Switch>
 
     </div>

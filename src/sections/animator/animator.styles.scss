@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-.container {
+.containerIntro {
   padding: 10% 60% 10% 100px;
   display: flex;
   z-index: -1;
+  // border: 1px solid white;
 }
 .home-scroller {
   display: flex;
@@ -22,4 +23,19 @@
 
 .primarybutton:hover {
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .containerIntro {
+    padding-top: 240px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0px;
+  }
+  .introContent {
+    width: 80vw;
+    margin-left: 10vw;
+  }
 }

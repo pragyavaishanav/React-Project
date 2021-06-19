@@ -1,56 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mate+SC&display=swap");
 
-
-.card2-container{
-    padding: 100px 0;
-    background-color: white;
+.card2-container {
+  padding: 100px 0;
+  background-color: #353131;
 }
 
-.card2-fixed-container{
-    margin: 0 100px;
+.card2-fixed-container {
+  margin: 0 100px;
 }
 
-.card2-fixed-container-row-1{
-    font-family: 'Mate SC', serif;
-    margin-bottom: 75px;
-    font-size: 68px;
-    line-height: 56px;
-    overflow-wrap: break-word;
-    text-transform: uppercase;
+.card2-fixed-container-row-1 {
+  font-family: "Mate SC", serif;
+  margin-bottom: 75px;
+  font-size: 56px;
+  line-height: 56px;
+  overflow-wrap: break-word;
+  text-transform: uppercase;
+  color: white;
 }
 
-.card2-fixed-container-row-2{
+.card2-fixed-container-row-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.card2-row2-col-1-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.col-row-img {
+  padding-right: 7px;
+}
+
+.col-row-text {
+  margin-left: 11.725px;
+}
+
+.col-row-text-title {
+  font-size: 22px;
+  letter-spacing: normal;
+  line-height: 42px;
+  overflow-wrap: break-word;
+  text-transform: uppercase;
+}
+
+.col-row-text-paragrah {
+  font-size: 16px;
+  line-height: 21px;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 600px) {
+  .card2-fixed-container-row-2 {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.card2-row2-col-1-row{
+    flex-direction: column;
+  }
+  .card2-row2-col-1-row-button {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 45px;
-}
-
-.col-row-img{
-    padding-right: 7px;
-}
-
-.col-row-text{
-    font-family: 'Mate SC', serif;
-    margin-left: 11.725px;
-}
-
-.col-row-text-title{
-    font-size: 22px;
-    letter-spacing: normal;
-    line-height: 42px;
-    overflow-wrap: break-word;
-    text-transform: uppercase;
-}
-
-.col-row-text-paragrah{
-    font-size: 16px;
-    line-height: 21px;
-    overflow-wrap: break-word;
+    justify-content: center;
+  }
 }

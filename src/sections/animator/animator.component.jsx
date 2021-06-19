@@ -6,8 +6,8 @@ import CarouselData from "../../datafiles/carouseldata";
 import Carousel from "../../components/carousel/carousel.component";
 
 const AnimScroll = () => (
-  <div className="container">
-    <div>
+  <div className="containerIntro">
+    <div className="introContent">
       <div className="home-intro">
         FUTURE OF INSTRUMENTATION MONITORING IS HERE
       </div>
@@ -25,7 +25,6 @@ const AnimScroll = () => (
         <PrimaryButton color="brown">BOOK A DEMO</PrimaryButton>
       </div>
     </div>
-
     <div>
       <Carousel CarouselData={CarouselData} />
     </div>

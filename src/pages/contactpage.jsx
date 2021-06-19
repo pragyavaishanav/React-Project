@@ -1,11 +1,18 @@
-import ContactForm from "../components/contactUsForm/contact.component";
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "../sections/header/header.component";
+import ContactForm from "../components/contactUsForm/contact.component";
+import Footer from "../sections/footer/footer.component";
 
 export default function ContactPage() {
   return (
-    <div>
-      <ContactForm></ContactForm>;
-    </div>
+    <section>
+      <div>
+        <Header></Header>
+      </div>
+      <div style={{ width: "60%", margin: "auto", padding: "10vw" }}>
+        <ContactForm />
+      </div>
+      <Footer></Footer>
+    </section>
   );
 }

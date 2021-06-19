@@ -14,9 +14,14 @@ const Subnavbar = (props) => {
       ></div> */}
       <ul style={{ marginLeft: props.margin }}>
         {props.items.map((item) => (
-          <li key={item}>
+          <li key={item.menu}>
             <br />
-            {item}
+            <a
+              style={{ color: "inherit", textDecoration: "none" }}
+              href={item.link}
+            >
+              {item.menu}
+            </a>
             <br />
           </li>
         ))}
