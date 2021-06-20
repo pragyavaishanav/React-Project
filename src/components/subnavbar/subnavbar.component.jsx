@@ -1,14 +1,6 @@
-import React from 'react';
-import './subnavbar.styles.scss'
+import React from "react";
+import "./subnavbar.styles.scss";
 
-<<<<<<< HEAD
-const Subnavbar = (props) => (
-    <div className = {props.className +" menu-overflow"}> 
-    <ul>
-        <li>Industy 1.0</li>
-        <li> Industry 2.0</li>
-    </ul>
-=======
 const Subnavbar = (props) => {
   return (
     <div className={props.className + " menu-overflow"}>
@@ -34,9 +26,8 @@ const Subnavbar = (props) => {
           </li>
         ))}
       </ul>
->>>>>>> rahul/contactPage
     </div>
-
-);
+  );
+};
 
 export default Subnavbar;
