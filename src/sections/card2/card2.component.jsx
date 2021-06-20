@@ -1,78 +1,95 @@
-import React from 'react';
-import './card2.styles.scss';
-import CardList from '../../components/card-list/card-list.component';
+import React from "react";
+import PrimaryButton from "../../components/button/button.component";
+import "../card2/card2.styles.scss";
+import iotImage from "./IOT.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGlobe,
+  faCheckCircle,
+  faChartLine,
+} from "@fortawesome/free-solid-svg-icons";
 
-class Card2 extends React.Component{
-    constructor() {
-        super();
-
-        this.state = {
-            cardlist: [
-                {index: 0,
-                 cardImageURL: "https://www.machinemetrics.com/hubfs/mm20_icon_home_connect_any_mach_3.svg",
-                 cardTitle: "Connect",
-                 cardText: "connect, collect and visualize data from any piece of equipment on the shop floor"},
-                {index: 1,
-                 cardImageURL: "https://www.machinemetrics.com/hubfs/mm20_icon_home_analyze.svg",
-                 cardTitle: "Analyze",
-                 cardText: "connect, collect and visualize data from any piece of equipment on the shop floor"},
-                {index: 2,
-                 cardImageURL: "https://www.machinemetrics.com/hubfs/mm20_icon_home_take_action.svg",
-                 cardTitle: "Take Action",
-                 cardText: "connect, collect and visualize data from any piece of equipment on the shop floor"}
-            ],
-
-            images: [
-                {image: "https://www.machinemetrics.com/hubfs/website_work_model.435-retouch_dropshadow.png",
-                 index: 0,},
-                {image: "https://www.machinemetrics.com/hubfs/machinemetrics-downtime-report.png",
-                 index: 1,},
-                {image: "https://www.machinemetrics.com/hubfs/LabelFailures-NewFrame-2.gif",
-                 index: 2,},
-            ],
-
-            activeTab: 0,
-        }
-
-        this.handleClick = (a) => (
-            this.setState({activeTab: a})
-        )
-    }
-
-    render() {
-        return(
-            <div>
-                <div className="card2-container">
-                    <div className="card2-fixed-container">
-                        <div className="card2-top-section">
-                            {this.state.images.map(i => (
-                                <div className={i.index == this.state.activeTab ? "" : "hide"}>
-                                    <img style={{width:"37.5vw", height:"25vw"}} src={i.image} alt="" />
-                                </div>
-                            ))}
-                            <div>
-                                <div style={{marginLeft:"55px"}}>
-                                    <div className="right-text-title">
-                                        increase throughput. maximize profitability
-                                    </div>
-                                    <div className="right-text">
-                                        <p>
-                                            For manufacturers, it’s never been more important to deliver the best product faster than ever. 
-                                            Continuous improvement in manufacturing starts with capturing insights from your operations- 
-                                            specifically your machine assets and people. MachineMetrics’ Industrial IoT Platform has automated 
-                                            machine data collection and production analytics to deliver data-driven insights in a matter of
-                                            minutes. Jumpstart your digital factory and take action that improves your bottom line.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <CardList handleClick={this.handleClick} cardlist={this.state.cardlist}></CardList>
-                    </div>
+const Card2 = () => (
+  <div>
+    <div className="card2-container">
+      <div className="card2-fluid">
+        <div className="card2-fixed-container">
+          <div className="card2-fixed-container-row-1">
+            SEE CONSTRUCTION THROUGH OUR LENS
+          </div>
+          <div className="card2-fixed-container-row-2">
+            <div className="card2-row2-col-1">
+              <div className="card2-row2-col-1-row">
+                <div className="col-row-img">
+                  <FontAwesomeIcon icon={faChartLine}></FontAwesomeIcon>
                 </div>
+                <div className="col-row-text">
+                  <div className="col-row-text-title">
+                    Geotechnical Instrumentation Data
+                  </div>
+                  <div className="col-row-text-paragrah">
+                    Plug-and-Play system to connect all Geotechnical
+                    Instrumentation with multiple protocols. Collect and store
+                    data security with multiple backups. Generate trends,
+                    analysis, reports with just a click. Do meaningful
+                    engineering analysis of the design and calculate the effects
+                    of change of design parameters.
+                  </div>
+                </div>
+              </div>
+              <div className="card2-row2-col-1-row">
+                <div className="col-row-img">
+                  <FontAwesomeIcon icon={faCheckCircle} />
+                </div>
+                <div className="col-row-text">
+                  <div className="col-row-text-title">Construction Surveys</div>
+                  <div className="col-row-text-paragrah">
+                    Collect 2-D and 3-D data from regular photos, photogrammetry
+                    and Lidar. Repeat the surveys with precision and accuracy.
+                    Compare the data sets to calculate structural deformations.
+                  </div>
+                </div>
+              </div>
+              <div className="card2-row2-col-1-row">
+                <div className="col-row-img">
+                  <FontAwesomeIcon icon={faGlobe} />
+                </div>
+                <div className="col-row-text">
+                  <div className="col-row-text-title">
+                    Environmental Monitoring
+                  </div>
+                  <div className="col-row-text-paragrah">
+                    Monitor the effects of construction on surroundings using by
+                    tracking Noise, Vibration, Air Quality and Dust Emission.
+                  </div>
+                </div>
+              </div>
+              <div
+                className="card2-row2-col-1-row card2-row2-col-1-row-button"
+                style={{ paddingTop: "20px" }}
+              >
+                <PrimaryButton color="brown">EXPLORE PLATFORM</PrimaryButton>
+              </div>
             </div>
-        );
-    }
-}
+            <div className="card2-row2-col-2">
+              <div className="card2-row2-col-2-img">
+                <img
+                  src={iotImage}
+                  alt=""
+                  style={{
+                    width: "42vw",
+                    height: "31vw",
+                    marginLeft: "50px",
+                    boxShadow: "4px 4px 4px 3px black",
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+);
 
 export default Card2;

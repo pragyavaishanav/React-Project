@@ -1,35 +1,67 @@
-.card2-container{
-    padding: 100px 0;
-    background-color: white;
+@import url("https://fonts.googleapis.com/css2?family=Mate+SC&display=swap");
+
+.card2-container {
+  padding: 100px 0;
+  background-color: #353131;
 }
 
-.hide{
-    display: none;
+.card2-fixed-container {
+  margin: 0 100px;
 }
 
-.card2-fixed-container{
-    margin: 0 100px;
+.card2-fixed-container-row-1 {
+  font-family: "Mate SC", serif;
+  margin-bottom: 75px;
+  font-size: 56px;
+  line-height: 56px;
+  overflow-wrap: break-word;
+  text-transform: uppercase;
+  color: white;
 }
 
-.card2-top-section{
+.card2-fixed-container-row-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.card2-row2-col-1-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.col-row-img {
+  padding-right: 7px;
+}
+
+.col-row-text {
+  margin-left: 11.725px;
+}
+
+.col-row-text-title {
+  font-size: 22px;
+  letter-spacing: normal;
+  line-height: 42px;
+  overflow-wrap: break-word;
+  text-transform: uppercase;
+}
+
+.col-row-text-paragrah {
+  font-size: 16px;
+  line-height: 21px;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 600px) {
+  .card2-fixed-container-row-2 {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-}
-
-.right-text-title{
-    font-family: 'Mate SC', serif;
-    font-size: 44px;
-    line-height: 38px;
-    margin-bottom: 40px;
-    text-transform: uppercase;
-}
-
-.right-text p{
-    margin-right: 40px;
-    line-height: 28px;
-    font-size: 22px;
-    cursor: default;
-    color:black;
+    flex-direction: column;
+  }
+  .card2-row2-col-1-row-button {
+    display: flex;
+    justify-content: center;
+  }
 }

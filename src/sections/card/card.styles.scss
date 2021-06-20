@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Mate+SC&display=swap");
+
+.card-container {
+  padding: 100px 0;
+  background-color: #353131;
+  color: white;
+}
+
+.card-fixed-container {
+  margin: 0 100px;
+}
+
+.application-top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card1-container {
+  margin-left: 55px;
+}
+
+.application-top-section {
+  display: flex;
+}
+
+.copy-title {
+  font-family: "Mate SC", serif;
+  font-size: larger;
+  line-height: 38px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.copy-text p {
+  margin-right: 40px;
+  line-height: 28px;
+  font-size: medium;
+  cursor: default;
+  color: white;
+}
+
+.application-bottom-section {
+  display: grid;
+  column-gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 80px;
+  row-gap: 0px;
+}
+
+.bottom-item-icon {
+  display: block;
+  cursor: pointer;
+}
+
+.bottom-item-copy {
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.div-btn-title {
+  font-size: 22px;
+  font-family: "Mate SC", serif;
+  letter-spacing: 0;
+  line-height: 42px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+  display: block;
+}
+
+.div-btn-title:hover {
+  color: brown;
+}
+
+.div-btn-paragraph {
+  font-size: 16px;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+.link-with-green-arrow a {
+  color: white;
+  font-family: "Mate SC", serif;
+  font-size: 22px;
+  letter-spacing: 0;
+  // line-height: 28px;
+  text-decoration: none;
+  position: relative;
+  border: 1px solid white;
+  padding: 10px;
+}
+.link-with-green-arrow a:hover {
+  background-color: brown;
+  color: white;
+}
+
+@keyframes rotationAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes growShrinkAnim {
+  0% {
+    transform: scaleY(1.1);
+  }
+  50% {
+    transform: scaleY(0.9);
+  }
+  100% {
+    transform: scaleY(1.1);
+  }
+}
+
+@keyframes takeOff {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  99% {
+    transform: translate(10px, -10px);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fa-connectdevelop,
+.fa-wpexplorer {
+  color: brown;
+  animation: rotationAnimation 5s infinite linear;
+}
+
+.fa-chart-area {
+  color: brown;
+  animation: growShrinkAnim 3s infinite ease;
+}
+
+.fa-plane-departure {
+  color: brown;
+  animation: takeOff 3s infinite ease-in-out;
+}
+
+@media (max-width: 600px) {
+  .application-top-section {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+  }
+
+  .application-top-section {
+    flex-direction: column;
+  }
+
+  .image-slider-section {
+    padding: 50px;
+  }
+  .card1-container {
+    margin-left: 0px;
+    width: 60vw;
+  }
+  .application-bottom-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+}
