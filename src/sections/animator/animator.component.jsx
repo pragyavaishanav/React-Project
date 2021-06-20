@@ -1,6 +1,6 @@
 import React from "react";
 import "./animator.styles.scss";
-import { Carousel } from "../../components/carousel/car";
+import Carousel from "../../components/carousel/carousel.component";
 
 import PrimaryButton from "../../components/button/button.component";
 
