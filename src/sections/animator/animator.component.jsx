@@ -1,13 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "./animator.styles.scss";
+
 import Carousel from "../../components/carousel/carousel.component";
 import CarouselData from "../../datafiles/carouseldata";
-
 import PrimaryButton from "../../components/button/button.component";
 
 const AnimScroll = () => (
-  <div className="containerIntro">
-    <div className="introContent">
+  <div className="h-screen ml-32 mr-32 pt-32 flex-col flex md:flex-row">
+    <div className="introContent pt-48">
       <div className="home-intro">
         FUTURE OF INSTRUMENTATION MONITORING IS HERE
       </div>
@@ -20,12 +22,12 @@ const AnimScroll = () => (
 
       <div style={{ float: "left", paddingTop: "1vw", display: "flex" }}>
         <PrimaryButton>WATCH THE VIDEO</PrimaryButton>
-        <PrimaryButton color="brown">BOOK A DEMO</PrimaryButton>
+        <Link to="/contact-us">
+          <PrimaryButton color="brown">BOOK A DEMO</PrimaryButton>
+        </Link>
       </div>
     </div>
-    <div>
-      <Carousel CarouselData={CarouselData} />
-    </div>
+    <Carousel CarouselData={CarouselData} />
   </div>
 );
 

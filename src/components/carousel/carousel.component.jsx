@@ -25,8 +25,8 @@ const Carousel = (props) => {
   }
 
   return (
-    <section>
-      <div className="imagecontainer">
+    <div className="justify-items-center m-auto pl-16 ">
+      <div className="w-96 m-auto ">
         {/* <button className="sliderbutton1" onClick={nextSlide}>
         next
       </button>
@@ -47,25 +47,25 @@ const Carousel = (props) => {
           >
             <br />
             {index === current && (
-              <div>
+              <div className="justify-items-center">
                 <img
-                  className="image"
+                  className="w-96"
                   alt="information"
                   key={imageData.index}
                   src={imageData.imageUrl}
                 ></img>
-                <p className="carouselHeading"> {imageData.message} </p>
+                <p className="text-center  text-white"> {imageData.message} </p>
               </div>
             )}
           </div>
         ))}
       </div>
-      <div className="learnmorebutton">
+      <div className="w-6/12 ml-32 text-white border-2 text-center mt-0">
         <a className="learnmorelink" href={`/test/${current}`}>
           Learn More
         </a>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -44,14 +44,10 @@ class Card extends React.Component {
           <div className="card-fluid">
             <div className="card-fixed-container">
               <div className="application-feater-main-container">
-                <div className="application-top-section">
-                  <div className="image-slider-section">
-                    <div style={{ paddingRight: "60px" }}>
-                      <img
-                        src={this.state.imageSrc}
-                        style={{ width: "37.5vw", height: "25vw" }}
-                        alt=""
-                      />
+                <div className="application-top-section ">
+                  <div className="image-slider-section w-screen ">
+                    <div>
+                      <img src={this.state.imageSrc} alt="" />
                     </div>
                   </div>
                   <div className="text-section" style={{ float: "left" }}>

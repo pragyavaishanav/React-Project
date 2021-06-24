@@ -4,6 +4,7 @@ import image1 from "./images/Logo.png";
 import Subnavbar from "../../components/subnavbar/subnavbar.component";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 class Header extends React.Component {
   constructor(props) {
@@ -27,11 +28,20 @@ class Header extends React.Component {
           key: "12",
           menu: "Solutions",
           menuItems: [
-            { menu: "Geotechnical Instrumentation Installation", link: "#" },
-            { menu: "Crack-Lens Automated Crack Monitoring", link: "#" },
-            { menu: "Long Distance Lora Based Dataloggers", link: "#" },
-            { menu: "Digital Twin for Construction", link: "#" },
-            { menu: "Construction Surveys", link: "#" },
+            {
+              menu: "Geotechnical Instrumentation Installation",
+              link: "geotechnical-installation",
+            },
+            {
+              menu: "Crack-Lens Automated Crack Monitoring",
+              link: "crack-lens",
+            },
+            {
+              menu: "Long Distance Lora Based Dataloggers",
+              link: "lora-devices",
+            },
+            { menu: "Digital Twin for Construction", link: "digital-twin" },
+            { menu: "Construction Surveys", link: "construction-survey" },
           ],
           margin: "40vw",
         },
@@ -39,7 +49,7 @@ class Header extends React.Component {
           key: "13",
           menu: "Company",
           menuItems: [
-            { menu: "About Us", link: "#" },
+            { menu: "About Us", link: "/about-us" },
             { menu: "Contact Us", link: "/contact-us" },
             { menu: "Team", link: "#" },
           ],
@@ -67,9 +77,9 @@ class Header extends React.Component {
     return (
       <div className="menu-container">
         <div className="logo-container">
-          <a href="/">
+          <Link to="/">
             <img alt="NeuraTwin" className="logo-image" src={image1}></img>
-          </a>
+          </Link>
         </div>
 
         <div className="menu-items">
@@ -94,10 +104,14 @@ class Header extends React.Component {
               )}
             </div>
           ))}
-          <div className="side-items">
-            <div className="button">Book A Demo</div>
-            <div className="ind-items"> Sign in</div>
+        </div>
+        <div className="side-items">
+          <div className="demoButton">
+            <Link to="/contact-us">Book A Demo</Link>
           </div>
+          <Link to="/login">
+            <div className="ind-items"> Sign in</div>
+          </Link>
         </div>
       </div>
     );

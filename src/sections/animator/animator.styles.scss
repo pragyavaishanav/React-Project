@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 .containerIntro {
-  padding: 10% 60% 10% 100px;
+  padding: 10% 60% 10% 0px;
   display: flex;
   z-index: -1;
+  background-color: #353131;
   // border: 1px solid white;
 }
 .home-scroller {

@@ -17,8 +17,8 @@ const Card2 = () => (
           <div className="card2-fixed-container-row-1">
             SEE CONSTRUCTION THROUGH OUR LENS
           </div>
-          <div className="card2-fixed-container-row-2">
-            <div className="card2-row2-col-1">
+          <div className="card2-fixed-container-row-2 flex ">
+            <div className="w-6/12 card2-row2-col-1">
               <div className="card2-row2-col-1-row">
                 <div className="col-row-img">
                   <FontAwesomeIcon icon={faChartLine}></FontAwesomeIcon>
@@ -71,8 +71,8 @@ const Card2 = () => (
                 <PrimaryButton color="brown">EXPLORE PLATFORM</PrimaryButton>
               </div>
             </div>
-            <div className="card2-row2-col-2">
-              <div className="card2-row2-col-2-img">
+            <div className="w-6/12 card2-row2-col-2">
+              <div>
                 <img
                   src={iotImage}
                   alt=""

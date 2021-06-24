@@ -1,9 +1,10 @@
 import React from "react";
 import "./subnavbar.styles.scss";
+import { Link } from "react-router-dom";
 
 const Subnavbar = (props) => {
   return (
-    <div className={props.className + " menu-overflow"}>
+    <div className={props.className + " menu-overflow pl-8 text-white text-xs"}>
       {/* <div
         style={{
           backgroundColor: "rgb(0,0,0)",
@@ -16,12 +17,13 @@ const Subnavbar = (props) => {
         {props.items.map((item) => (
           <li key={item.menu}>
             <br />
-            <a
-              style={{ color: "inherit", textDecoration: "none" }}
-              href={item.link}
+            <Link
+              className="text-xs pl-8 hover:text-red-500"
+              style={{ textDecoration: "none" }}
+              to={item.link}
             >
               {item.menu}
-            </a>
+            </Link>
             <br />
           </li>
         ))}
